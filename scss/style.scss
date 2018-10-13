@@ -1,0 +1,42 @@
+@import "bootstrap/bootstrap";
+
+.container {
+    &--top {
+        background-position: top center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url('../img/top-bg.png');
+        min-height: 100vh;
+    }
+}
+
+.border {
+    &-10 {
+        border-width: 10px !important;
+    }
+}
+
+.title {
+    position: relative;
+    transform-style: preserve-3d;
+    &::before {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        margin-top: 15px;
+        background-color: theme-color("secondary");
+        width: 68px;
+        height: 21px;
+        transform: translateZ(-1px);
+    }
+}
+
+.btn {
+    &--main {
+        background-color: theme-color("secondary");
+        color: color('white');
+        right: 0;
+        top: 0;
+        margin-top: - $font-size-base;
+    }
+}
