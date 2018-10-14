@@ -7338,12 +7338,18 @@ a.text-dark:hover, a.text-dark:focus {
     color: inherit;
     border-color: #dee2e6; } }
 
-.container--top {
-  background-position: top center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url("../img/top-bg.png");
-  min-height: 100vh; }
+.section {
+  margin-bottom: 150px; }
+  .section--top {
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../img/top-bg.png");
+    min-height: 100vh;
+    width: 100%;
+    margin-bottom: 250px; }
+    .section--top .container {
+      min-height: 100vh; }
 
 .border-10 {
   border-width: 10px !important; }
@@ -7367,5 +7373,22 @@ a.text-dark:hover, a.text-dark:focus {
   background-color: #7beec7;
   color: #fff;
   right: 0;
-  top: 0;
-  margin-top: -1rem; }
+  bottom: -1.75rem; }
+
+.text--sm {
+  font-size: 0.875rem; }
+
+.icon {
+  font-size: 3rem;
+  font-weight: 100; }
+
+.list-group-item.active {
+  background-color: #7beec7;
+  color: #fff;
+  border-radius: 0; }
+
+.grid-sizer, .grid-item {
+  width: 30%; }
+
+.grid-item {
+  margin-bottom: 1rem; }
